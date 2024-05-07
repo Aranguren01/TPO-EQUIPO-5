@@ -14,6 +14,7 @@
     --white: #fff;
     --gray: #666;
     --gray-dark: #343a40;
+    --gray-soft: #1d1e20ba;
     --primary: #007bff;
     --secondary: #cdc7c7;
     --success: #28a745;
@@ -22,6 +23,7 @@
     --danger: #dc3545;
     --light: #f8f8f7;
     --dark: #343a40;
+    --transp: #ffffff00;
     --breakpoint-xs: 0;
     --breakpoint-sm: 768px;
     --breakpoint-md: 1025px;
@@ -29,7 +31,7 @@
     --breakpoint-xl: 1600px;
     --breakpoint-xxl: 1921px;
     --font-family-sans-serif: "Roboto", "Helvetica Neue", Arial;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 }
 
 
@@ -53,7 +55,7 @@ a{
 }
 
 .header{
-  background-color:var(--dark);
+  background-color:var(--transp);
   position: fixed;
   top:0;
   left: 0;
@@ -61,8 +63,8 @@ a{
   z-index: 9999;
 }
 
-.scrolled{
-  background-color: var(--grey-dark);
+.scrolled {
+  background-color: var(--gray-soft);
   color: var(--secondary);
 }
 
@@ -113,6 +115,7 @@ background-image: url('../img/revuelto.webp');
     background-size: cover;
     background-position: center;
     height: 950px;
+    box-shadow: inset 0 0 1000px rgba(119, 53, 16, 0.425);
 }
 
 h1  {
