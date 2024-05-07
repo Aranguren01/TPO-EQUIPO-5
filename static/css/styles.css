@@ -1,0 +1,145 @@
+
+
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #dfb400;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #666;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #cdc7c7;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #dfb400;
+    --danger: #dc3545;
+    --light: #f8f8f7;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 768px;
+    --breakpoint-md: 1025px;
+    --breakpoint-lg: 1366px;
+    --breakpoint-xl: 1600px;
+    --breakpoint-xxl: 1921px;
+    --font-family-sans-serif: "Roboto", "Helvetica Neue", Arial;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-sans-serif);
+}
+
+
+body{
+  background-color:var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  background-color:var(--dark);
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.scrolled{
+  background-color: var(--grey-dark);
+  color: var(--secondary);
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color:#FFF;
+}
+
+.nav-links a:hover{
+  color: #9a9999 ;
+}
+
+
+.btn-lamb{
+  background-color: var(--yellow);
+  padding: 12px;
+  border-radius: 10px;
+  color: var(--info);
+  cursor: pointer;
+  font-weight: 400;
+
+  
+}
+.btn-lamb:hover{
+  color:var(--secondary-color)!important;
+  border: 1px solid var(--yellow);
+}
+
+.banner{
+background-image: url('../img/revuelto.webp');
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+}
+
+h1  {
+    color: var(--white);
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    bottom: 650px;
+    font-size: 90px;
+    
+}
+
+#banner p {
+  color: var(--white);
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  bottom: 740px;
+  font-size: 40px;
+}
+
+h2 {
+  color: var(--white);
+}
+
+.car-models {
+  width: 480px;
+  height: 270px;
+  object-fit: contain;
+}
