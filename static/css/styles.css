@@ -146,3 +146,29 @@ h2 {
   height: 270px;
   object-fit: contain;
 }
+/* APORTE DE JOSE */
+.imgsvg {
+  box-sizing: border-box;
+  margin: 0;
+}
+.contenedor {
+  margin: 0;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de tamaño igual */
+}
+.mitad2{
+  margin-left: 0;
+  text-align: center;
+  margin-top: 20px;
+  /* background-color: rebeccapurple; */
+}
+.mitad1{
+  /* background-color: #dc3545; */
+  margin-left: -82.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+.mitad1, .mitad2, p {
+  font-size: 18px;
+}
