@@ -707,4 +707,18 @@ footer{
   padding-top: 20px;
   color: var(--white);
   text-align: center;
+  align-items: center;
+  
+  
+}
+
+#social a{
+text-decoration: none;
+color: var(--white); 
+padding: 10px;
+font-size: 25px;
+}
+
+#social a:hover{
+  color: #9a9999 ;
 }
