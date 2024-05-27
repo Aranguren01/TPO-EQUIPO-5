@@ -269,7 +269,7 @@ background-image: url('../img/revuelto.webp');
 }
 
 
-#boton1, #boton2 {
+#boton1 {
   display: inline-block;
   text-decoration: none;
   background-color: var(--white);
@@ -286,10 +286,34 @@ background-image: url('../img/revuelto.webp');
   color: var(--gray-soft);
 }
 
-#boton1, #boton2:hover {
+#boton1:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+#boton2 {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  color: var(--gray-soft);
+}
+
+#boton2:hover {
   color: var(--white);
   background-color: var(--dark);
 }
+
+
 
 p {
   margin-top: 20px;
@@ -425,11 +449,7 @@ color: #343a40;
 	animation-play-state: paused;
 }
 
-#noticias {
-  height: 950px;
-  background-color: var(--light);
-  
-}
+
 
 #test-drive {
   background-image: url('../img/gw_hura_01.jpeg');
@@ -489,7 +509,25 @@ font-weight: 600px;
   padding: 20px;
 }
 
-#noticias h1, #noticias h3{
+
+#noticias {
+  height: 950px;
+  background-color: var(--light);
+  padding-top: 150px;
+  text-align: center;
+  
+  
+}
+#noticias h2{
+  font-size: 80px;
+  color: black;
+  margin-bottom: 50px;
+  margin-left: 100px; 
+  
+
+}
+
+#noticias h3{
   color: black; 
   text-align: center;
 }
@@ -503,6 +541,7 @@ font-weight: 600px;
   display: flex;
   transition: transform 0.5s ease-in-out;
   color: black;
+ 
 }
 
 .carousel-slide {
@@ -520,7 +559,15 @@ font-weight: 600px;
 .carousel-slide h2,
 .carousel-slide p {
     color: black;
-    text-align: center; 
+    text-align: center;
+    width: 80%; 
+}
+
+.carousel-slide video {
+  display: block; 
+  margin: 0 auto; 
+  width: 500px;
+  height: 600px; 
 }
 
 
@@ -629,16 +676,21 @@ button[type="submit"]:hover {
 .form-help a:hover {
   text-decoration: underline;
 }
+
+
 #comentarios {
   background-color: #f8f8f8;
-  padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
+  width: 400px;
+
 }
+
 #comentarios h2 {
   margin-bottom: 10px;
   color: #333;
 }
+
 .comentario {
   margin-bottom: 15px;
   padding: 15px;
@@ -654,6 +706,12 @@ button[type="submit"]:hover {
   margin-top: 5px;
   color: #555;
 }
+
+#formComentario .form-control label {
+  color: var(--gray-dark);
+}
+
+
 #formComentario {
   margin-top: 20px;
 }
