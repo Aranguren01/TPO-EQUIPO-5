@@ -1,55 +1,74 @@
-
-
 function validarFormulario() {
-    // Obtener los valores ingresados por el usuario y recortar
-    // los posibles espacios en blanco al principio y al final.
-    var nombre = document.getElementById("nombre").value.trim();
-    var apellido = document.getElementById("apellido").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var password = document.getElementById("password").value.trim();
-    var birthdate = document.getElementById("birthdate").value.trim();
-    var pais = document.getElementById("pais").value.trim();
+  // Obtener los valores ingresados por el usuario y recortar los posibles espacios en blanco al principio y al final.
+  var nombre = document.getElementById("firstname").value.trim();
+  var apellido = document.getElementById("lastname").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var password = document.getElementById("password").value.trim();
+  var birthdate = document.getElementById("birthdate").value;
+  var pais = document.getElementById("country").value;
+  var terms = document.getElementById("terms").checked;
 
+  // Limpiar los mensajes de error y eliminar clases de error
+  limpiarErrores();
 
-    // Verificar si algún campo está en blanco
-    if (nombre === "" || apellido === "" || email === "" password=== "" || birthdate === "" || pais === "") {
-
-      alert("Por favor, complete todos los campos del formulario.");
+  // Verificar si algún campo está en blanco y establecer mensajes de error en el placeholder o debajo del campo
+  if (nombre === "") {
+      mostrarError("firstname", "Por favor, ingrese su nombre.");
       return false;
-    }
-
-    // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
-    for (var i = 0; i < nombre.length; i++) {
-      var charCode = nombre.charCodeAt(i);
-      if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 32)) {
-        alert("El campo 'nombre' solo puede contener caracteres alfabéticos y espacios.");
-        return false;
-      }
-    }
-
-     // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
-     for (var i = 0; i < apellido.length; i++) {
-        var charCode = apellido.charCodeAt(i);
-        if (!((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || charCode === 32)) {
-          alert("El campo 'apellido' solo puede contener caracteres alfabéticos y espacios.");
-          return false;
-        }
-      }
-
-    // Verificar si el DNI contiene solo 8 dígitos numéricos
-    if (dni.length !== 8) {
-      alert("El campo 'dni' debe contener exactamente 8 dígitos numéricos.");
-      return false;
-    }
-    for (var j = 0; j < dni.length; j++) {
-      var digit = dni.charAt(j);
-      if (digit < "0" || digit > "9") {
-        alert("El campo 'dni' solo puede contener dígitos numéricos.");
-        return false;
-      }
-    }
-
-    // Si todas las validaciones son exitosas, enviar el formulario
-    alert("Formulario enviado correctamente.");
-    return true;
   }
+  if (apellido === "") {
+      mostrarError("lastname", "Por favor, ingrese su apellido.");
+      return false;
+  }
+  if (email === "") {
+      mostrarError("email", "Por favor, ingrese su email.");
+      return false;
+  }
+  if (password === "") {
+      mostrarError("password", "Por favor, ingrese su contraseña.");
+      return false;
+  }
+  if (birthdate === "") {
+      mostrarError("birthdate", "Por favor, ingrese su fecha de nacimiento.");
+      return false;
+  }
+  if (pais === "") {
+      mostrarError("country", "Por favor, seleccione su país.");
+      return false;
+  }
+  if (!terms) {
+      mostrarError("terms", "Debe aceptar los términos y condiciones.");
+      return false;
+  }
+
+  // Si todas las validaciones son exitosas, mostrar un mensaje de éxito
+  alert("Formulario enviado correctamente.");
+  return true;
+}
+
+function limpiarErrores() {
+  var elementos = document.querySelectorAll(".error");
+  elementos.forEach(function(el) {
+      el.classList.remove("error");
+  });
+
+  var mensajes = document.querySelectorAll(".error-message");
+  mensajes.forEach(function(mensaje) {
+      mensaje.innerText = "";
+  });
+}
+
+function mostrarError(id, mensaje) {
+  var elemento = document.getElementById(id);
+  var mensajeError = document.getElementById("error-" + id);
+  
+  if (id === "terms" || id === "country" || id === "birthdate") {
+      mensajeError.innerText = mensaje;
+      mensajeError.classList.add("error-message");
+      elemento.classList.add("error");
+  } else {
+      elemento.classList.add("error");
+      elemento.value = "";
+      elemento.placeholder = mensaje;
+  }
+}

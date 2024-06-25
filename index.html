@@ -14,13 +14,22 @@
 </head>
 
 <body>
+
+    <!-- COMIENZO ENCABEZADO-->
     <header class="header">
+       
+        <!-- NAVEGACION-->
         <nav>
+            
+            <!-- COMIENZO LOGO-->
             <div class="logo">
                 <a href="index.html">
                     <img src="static/img/logo_header.svg" alt="Logo-lamborghini" height="70" width="70">
                 </a>
             </div>
+            <!-- FIN LOGO-->
+
+            <!-- COMIENZO ENCABEZADO-->
             <ul class="nav-links">
                 <li class="dropdown">
                     <a>Modelos</a>
@@ -37,17 +46,29 @@
                 <li><a href="#" class="btn-lamb"><span>Iniciar Sesión</span></a></li>
             </ul>
         </nav>
+        <!-- FIN NAVEGACION-->
     </header>
+    <!-- FIN ENCABEZADO-->
+
     <main>
-
+<!-- COMIENZO SECCION BANNER-->
         <section id="banner" class="banner">
-            <div>
-                <p class="slideInLeft">Conocé</p>
-               <a href="#revuelto"><h1  class="slideInLeft">Revuelto</h1></a> 
+            <div id="intro">
+                <p class="slideInLeft">Bienvenido a</p>
+                <h1 class="slideInLeft">LAMBORGHINI ARGENTINA</h1>
+                <div id="botonrev" class="slideInLeft paused"><a href="#revuelto">Conocé Revuelto</a></div>
             </div>
+
+
+
+
+         
+                
+            
         </section>
+<!-- FIN SECCION BANNER-->
 
-
+<!-- COMIENZO SECCION MODELOS-->
         <section id="modelos">
             <div class="contenedor">
                 <div id="aventador" class="mitad pos1" >
@@ -61,20 +82,20 @@
                                 </clipPath>
                             </defs>
                             <g clip-path="url(#clip-polygon--uid311)">
-                                <image class="shadow" href="static/img/aven_gate_03.webp"  width="180%" height="130%" x="-9%" y="-20%"></image>
+                                <image class="shadow" href="static/img/aven_gate_03.webp"  width="180%" height="130%" x="-5%" y="-20%"></image>
                             </g>
                         </svg>
                     </div>
                 </div>
                 <div id="aventadordata"class="mitad1 pos2 slideInLeft paused">
-                    <div>
+                    <div class="contenedorav1">
                         <h2 class="slideInRight paused">Lamborghini Aventador LP780-4</h2>
                         <p class="slideInRight paused">El Lamborghini Aventador LP780-4, una bestia de asfalto que despierta emociones y desafía los límites de la velocidad.</p>
                         <p class="slideInRight paused">Con su imponente diseño aerodinámico y líneas agresivas, este superdeportivo italiano es una obra maestra de la ingeniería automotriz.</p>
-                        <div id="btncont slideInRight paused"><a href="#" id="boton1">Ver más</a></div>
+                        <div id="btncont slideInRight paused"><a href="https://www.lamborghini.com/es-en/modelos/aventador" id="boton1">Ver más</a></div>
                     </div>
                 </div>
-                <div id="aventadordata2" class="pos3 datos2">
+                <div id="aventadordata2" class="pos3 datos2 ">
                 <div id="innerdata1">
                     <div class=""><img src="static/img/aventador_logo.webp" alt="aventador_logo"></div>
                 <p class="slideInLeft paused" >El pensamiento revolucionario forma parte del ADN de Automobili Lamborghini: hablar de diseño 
@@ -88,10 +109,6 @@
         
 
 
-
-
-
-
         <div id="venenodata" class="mitad2 pos4">
     <h2 class="slideInLeft paused">Lamborghini Veneno</h2>
     <p class="slideInLeft paused">El Lamborghini Veneno es una obra maestra del diseño automotriz, y más que un superdeportivo: es una declaración
@@ -102,23 +119,23 @@
     </div>
 </div>
 <div id="veneno" class="mitad pos5">
-    <div class="imgsvg">
+    <div class="imgsvg slideInRight paused" >
         <svg height="100%" viewBox="-4 0 16 12" xmlns="http://www.w3.org/2000/svg" class="clip-svg">
             <defs>
                 <clipPath id="clip-polygon--uid312">
                     <polygon points="8 0, 5 0, -10 20, 20 18"></polygon>
-                    <rect x="8" y="0" width="8" height="16"></rect>
+                    <rect x="8" y="0" width="8" height="11"></rect>
                     <polygon points="0 0, 0 0, 0 0, 15.9 0"></polygon>
                 </clipPath>
             </defs>
             <g clip-path="url(#clip-polygon--uid312)">
-                <image href="static/img/veneno_over_rev_01.webp" alt="Car" width="180%" height="130%" x="-25%" y="-20%"
+                <image class="shadow"  href="static/img/veneno-HEADER.webp" width="180%" height="130%" x="-25%" y="-20%"
                     style="transform: scaleX(-1); transform-origin: center;"></image>
             </g>
         </svg>
     </div>
 </div>
-<!-- <div id="venenodata2" class="pos6 datos2">
+<div id="venenodata2" class="pos6 datos2">
     <div id="innerdata2">
         <p class="slideInLeft paused">El pensamiento revolucionario forma parte del ADN de Automobili Lamborghini:
             hablar de diseño
@@ -129,7 +146,7 @@
             punto de referencia para el sector de los superdeportivos y adelantándose ya hoy a los coches del futuro.
             Una familia de superdeportivos que ya es leyenda.</p>
     </div>
-</div> -->
+</div> 
 
 <div id="huracan" class="mitad pos7">
     <div class="imgsvg">
@@ -159,14 +176,14 @@
 </div>
 <div id="huracandata2" class="pos9 datos2">
     <div id="innerdata3">
-        <!-- <p class="slideInLeft paused">El pensamiento revolucionario forma parte del ADN de Automobili Lamborghini:
+        <p class="slideInLeft paused">El pensamiento revolucionario forma parte del ADN de Automobili Lamborghini:
             hablar de diseño
             inspirado en la aeronáutica o de tecnologías como el motor V12 o el uso de la fibra de carbono
             e ir más allá de los límites comúnmente aceptados forma parte de nuestra filosofía.
             El Aventador ha sido diseñado para ir más allá del propio concepto de rendimiento, convirtiéndose
             rápidamente en el
             punto de referencia para el sector de los superdeportivos y adelantándose ya hoy a los
-            coches del futuro. Una familia de superdeportivos que ya es leyenda.</p> -->
+            coches del futuro. Una familia de superdeportivos que ya es leyenda.</p>
     </div>
 
 </div>
@@ -174,7 +191,7 @@
     <h2>REVUELTO</h2>
     <p>Justo antes del 60 aniversario de la marca, Lamborghini presentó el Revuelto, el primer superdeportivo híbrido
         HPEV (High Performance Electrified Vehicle)</p>
-    <div id="btncont"><a href="#" id="boton2">Ver más</a></div>
+    <div id="btncont"><a href="https://www.lamborghini.com/es-en/modelos/revuelto" id="boton2">Ver más</a></div>
     <div class="texto2">
     </div>
 </div>
@@ -255,30 +272,12 @@
                             <div class="carousel-slide video-container">
                                 <h3>REVUELTO - LO NUEVO</h3>
                                 <p>Sentí la maxima potencia</p>
-                    
+                                <div class="video-wrapper">
                                     <video autoplay muted loop>
                                         <source src="static/video/revuelto.m4v" type="video/mp4">
-                                    </video></div>
+                                    </video></div></div>
                         </div>
-                        <!-- Sección de comentarios -->
-                        <div id="comentarios">
-                            <button id="mostrarFormulario">Dejar opinión</button>
-                            <form id="formComentario">
-                                <div class="form-control">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" id="nombre" required>
-                                </div>
-                                <div class="form-control">
-                                    <label for="correo">Correo electrónico</label>
-                                    <input type="email" id="correo" required>
-                                </div>
-                                <div class="form-control">
-                                    <label for="comentario">Comentario</label>
-                                    <textarea id="comentario" required></textarea>
-                                </div>
-                                <button type="submit">Enviar comentario</button>
-                            </form>
-                        </div>
+               
                     </div>
         </section>
         
@@ -296,36 +295,36 @@
         
         
         
-        <!-- Seccion de registro -->
-        <section id="registro">
-            
-            <div id="form-container">
+      <!-- Seccion de registro -->
+    <section id="registro">
+        <div id="form-container">
             <div id="form-wrapper">
                 <h2>Registro</h2>
-                <form action="#" id="formRegister" method="GET" novalidate onsubmit="return validacion()">
+                <form action="#" id="formRegister" method="GET" onsubmit="return validarFormulario()">
                     <div class="form-control">
                         <label for="firstname">Nombre</label>
-                        <input type="text" name="firstname" id="firstname" required>
+                        <input type="text" name="firstname" id="firstname">
+                        <div class="error" id="error-firstname"></div>
                     </div>
-                    <div class="error" id="error-firstname"></div>
                     <div class="form-control">
                         <label for="lastname">Apellido</label>
-                        <input type="text" name="lastname" id="lastname" required>
+                        <input type="text" name="lastname" id="lastname">
+                        <div class="error" id="error-lastname"></div>
                     </div>
-                    <div class="error" id="error-lastname"></div>
                     <div class="form-control">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email">
+                        <div class="error" id="error-email"></div>
                     </div>
-                    <div class="error" id="error-email"></div>
                     <div class="form-control">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password">
+                        <div class="error" id="error-password"></div>
                     </div>
-                    <div class="error" id="error-password"></div>
                     <div class="form-control">
                         <label for="birthdate">Fecha de Nacimiento</label>
-                        <input type="date" name="birthdate" id="birthdate" required>
+                        <input type="date" name="birthdate" id="birthdate">
+                        <div class="error" id="error-birthdate"></div>
                     </div>
                     <div class="form-control">
                         <label for="country">País</label>
@@ -340,12 +339,14 @@
                             <option value="UR">Uruguay</option>
                             <option value="Ot">Otro</option>
                         </select>
+                        <div class="error" id="error-country"></div>
                     </div>
                     <div class="form-terms">
                         <div class="terms">
                             <input type="checkbox" id="terms">
                             <label for="terms">Acepto términos y condiciones</label>
                         </div>
+                        <div class="error" id="error-terms"></div>
                     </div>
                     <button type="submit">Enviar</button>
                     <div class="form-help">
@@ -354,7 +355,7 @@
                 </form>
             </div>
         </div>
-        </section>
+    </section>
         </main>
         <footer>
             <div id="social">
